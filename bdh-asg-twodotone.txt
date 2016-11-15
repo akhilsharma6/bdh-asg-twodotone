@@ -4,16 +4,16 @@
 [acadgild@localhost ~]$ hadoop fs –ls /user/acadgild/hadoop
 
 //Tested below command to create a new directory under home directory /home/acadgild/
-[acadgild@localhost ~]$ hadoop fs –mkdir Hadoop
+[acadgild@localhost ~]$ hadoop fs –mkdir hadoop
 
 /* Task 2: Create a file in HDFS under directory /user/acadgild/hadoop, with name word-count.txt. Whatever we type on screen should get appended to the file. Try to type (on screen) few lines from any online article or textbook
 */
 
 //Tested below command to create a new file on HDFS
-[acadgild@localhost ~]$ hadoop fs –touchz /user/acadgild/Hadoop/word-count.txt
+[acadgild@localhost ~]$ hadoop fs –touchz /user/acadgild/hadoop/word-count.txt
 
 //Tested below command to remove a file.
-[acadgild@localhost ~]$ Hadoop fs –rm /user/acadgild/Hadoop/word-count.txt
+[acadgild@localhost ~]$ hadoop fs –rm /user/acadgild/hadoop/word-count.txt
 
 //Tested below command to create/edit a file in linux.
 [acadgild@localhost ~]$ gedit word-count.txt
@@ -25,4 +25,4 @@
 [acadgild@localhost ~]$ cat > word-count.txt
 
 //Tested below command to transfer file from local system to HDFS.
-[acadgild@localhost ~]$ ]hadoop fs –put word-count.txt /user/acadgild/Hadoop/word-count.txt
+[acadgild@localhost ~]$ ]hadoop fs –put word-count.txt /user/acadgild/hadoop/word-count.txt
